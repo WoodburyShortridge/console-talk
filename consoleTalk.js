@@ -3,8 +3,6 @@
     const _log = console.log, _warn = console.warn, _error = console.error;
     const voices = window.speechSynthesis.getVoices();
 
-    alert(voices.length);
-
     console.log = function(something) {
         let msg = new SpeechSynthesisUtterance(something);
         msg.voice = voices[7];
