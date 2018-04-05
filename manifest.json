@@ -3,6 +3,9 @@
   "name": "Console Talk",
   "description": "This extension makes your console talk",
   "version": "0.0.0.1",
+  "icons": {  "16": "icon.png",
+              "48": "icon.png",
+              "128": "icon.png" },
   "browser_action": {
     "default_icon": "icon.png",
     "default_title": "Console Talk",
@@ -13,7 +16,7 @@
     "matches": [ "*://*/*"],
     "run_at": "document_start"
   }],
-  "web_accessible_resources": ["consoleTalk.js"],
+  "web_accessible_resources": ["consoleTalk.js", "consoleQuiet.js"],
   "permissions": [
     "tabs",
     "activeTab",
